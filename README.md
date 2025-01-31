@@ -29,3 +29,32 @@ This Python script implements a graph-based heuristic algorithm to find the Mini
 
 1. Measures the execution time of the heuristic algorithm.
 2. Outputs the final MDS solution and its computation time.
+
+# Summary of the Stochastic Local Search Algorithm:
+This Python script implements a graph-based local search algorithm to find the Minimum Dominating Set (MDS) in a given network. The Minimum Dominating Set is a subset of nodes such that every node in the graph is either in this set or adjacent to a node in the set. The script constructs a graph, applies local search optimization, and evaluates computational efficiency.
+
+# Key Components of the Code:
+1. Graph Construction:
+
+  a. Loads an adjacency matrix from a CSV file.
+  b. Constructs an undirected graph (G2) using NetworkX.
+  c. Identifies edges between connected nodes and visualizes the graph.
+
+# Computation of Minimum Dominating Set (MDS):
+
+1. Degree-Based Node Selection:
+  a. Determines node degrees (number of connections).
+  b. Sorts nodes based on their connectivity to identify key influencers.
+
+2. Iterative Node Selection:
+  a. Uses a greedy heuristic to iteratively select the most influential nodes.
+  b. Removes covered nodes to minimize redundancy.
+
+3. Local Search Optimization:
+  a. Evaluates coverage using an objective function.
+  b. Swaps nodes to refine the solution and minimize the dominating set size.
+
+# Performance Evaluation:
+
+1. The final Minimum Dominating Set (MDS) is printed along with its cardinality (size).
+2. Execution time is calculated to measure computational efficiency.
