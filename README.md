@@ -1,0 +1,1 @@
+In this project there are two files. One python files includes the greedy algorithm to find the minimum dominating set. The other file has the code for finding the minimum dominating set using the stochastic local search
