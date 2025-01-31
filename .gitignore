@@ -156,7 +156,6 @@ pythontex-files-*/
 
 ## Other
 *.DS_Store
-*.zip
 *.xwm
 *.do.stswp
 
